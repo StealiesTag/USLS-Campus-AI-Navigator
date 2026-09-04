@@ -1,9 +1,9 @@
 import { CampusBuilding, NavigationRoute, NavigationStep, Waypoint } from "../types";
 
 export type { CampusBuilding };
-
+// Establish all buildings present on the reference picture.
 // =============================================================================
-// 🏛️ USLS CAMPUS BUILDINGS & LANDMARKS (Official Negros Summit Map Alignment)
+// 🏛️ USLS CAMPUS BUILDINGS & LANDMARKS
 // =============================================================================
 export const CAMPUS_BUILDINGS: CampusBuilding[] = [
   // --- USER LIVE LOCATION ---

@@ -1,3 +1,4 @@
+// All custom types here
 export type BuildingCategory =
   | "academic"
   | "admin"

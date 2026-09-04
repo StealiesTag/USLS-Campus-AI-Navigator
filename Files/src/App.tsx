@@ -14,7 +14,7 @@ import { LogIn, Sparkles, Compass, Layers } from "lucide-react";
 function MainDashboard() {
   const { user, login } = useAuth();
 
-  // Selected building & Origin state (defaults start position to user pointer)
+  // Selected building & Origin state (defaults start position to where user pointer is)
   const [selectedBuildingId, setSelectedBuildingId] = useState<string | null>("santuario-de-la-salle");
   const [originBuildingId, setOriginBuildingId] = useState<string>("user-current-location");
 
@@ -155,9 +155,9 @@ function MainDashboard() {
         </div>
       </main>
 
-      {/* ========================================================================= */}
-      {/* 📱 MOBILE BOTTOM NAVIGATION BAR (Only visible on screens < lg)             */}
-      {/* ========================================================================= */}
+      
+      {/*  MOBILE BOTTOM NAVIGATION BAR (Only visible on screens < lg)  */}
+   
       <nav className="lg:hidden fixed bottom-0 left-0 right-0 z-40 bg-white/95 border-t border-emerald-100 backdrop-blur-lg shadow-2xl flex items-center justify-around py-2 px-3">
         <button
           onClick={() => {
@@ -219,7 +219,7 @@ function MainDashboard() {
         }}
       />
 
-      {/* System & Architecture Specs Drawer */}
+      {/* System & Architecture Specs Drawer*/}
       <SecurityDrawer isOpen={securityOpen} onClose={() => setSecurityOpen(false)} />
 
       {/* Guided Walkthrough Modal */}

@@ -37,6 +37,7 @@ app.get("/api/health", (req, res) => {
   });
 });
 
+// Give context to AI here to retrieve data
 const CAMPUS_KNOWLEDGE = `
 USLS (University of St. La Salle, Bacolod) Campus Buildings & IDs (Official Negros Mental Health Summit Map Layout):
 - "user-current-location": Your Live Location / User Pointer (Default real-time GPS pinpoint & compass pointer)
@@ -157,6 +158,7 @@ app.post("/api/chat/navigate", async (req, res) => {
     "gemini-3.1-flash-lite",
   ];
 
+  // Instructions to the Ai
   const systemInstruction = `
 You are the official AI Navigator for the University of St. La Salle (USLS) campus in Bacolod.
 Your role is to guide students, faculty, and visitors around campus with friendly, concise, and helpful directions.

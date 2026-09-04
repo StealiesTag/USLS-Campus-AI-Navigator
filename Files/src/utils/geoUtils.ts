@@ -1,7 +1,7 @@
 // =============================================================================
-// 🌐 SIMPLE CAMPUS CARTESIAN COORDINATE SYSTEM
+// CARTESIAN COORDINATE SYSTEM
 // University of St. La Salle (USLS), Bacolod City
-// =============================================================================
+
 
 export interface GeoLocation {
   latitude: number;
@@ -37,9 +37,8 @@ export interface MapPosition {
   metersNorth: number; // Distance north/south in meters from origin
 }
 
-// -----------------------------------------------------------------------------
-// 📍 SIMPLE MAP COORDINATE SYSTEM CONSTANTS
-// -----------------------------------------------------------------------------
+
+
 
 // Known GPS origin on the campus: Central Quadrangle / Library area (USLS Bacolod)
 export const latitudeOrigin = 10.67889;
@@ -73,7 +72,7 @@ export const METERS_PER_DEG_LNG = 109390;
 // Therefore: 1 meter = 2 SVG units (0.5 meters per SVG unit)
 export const MAP_SCALE_SVG_PER_METER = 2.0;
 export const METERS_PER_SVG_UNIT = 1 / MAP_SCALE_SVG_PER_METER; // 0.5 m/unit
-
+// Though y coordinate is negative, since SVG does it from top-down for some reason.
 // Compatibility aliases
 export const PIXELS_PER_METER = MAP_SCALE_SVG_PER_METER;
 export const METERS_PER_PIXEL = METERS_PER_SVG_UNIT;
