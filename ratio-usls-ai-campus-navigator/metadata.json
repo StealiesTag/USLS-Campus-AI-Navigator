@@ -1,0 +1,10 @@
+{
+  "name": "Ratio USLS AI Campus Navigator",
+  "description": "An interactive AI-assistive campus navigation and building locator app for University of St. La Salle (USLS-Bacolod) featuring real-time map marking, directional routing, and Gemini 3.6 Flash assistance.",
+  "requestFramePermissions": [
+    "geolocation"
+  ],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
