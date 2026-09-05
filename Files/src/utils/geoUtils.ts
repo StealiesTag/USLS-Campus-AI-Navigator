@@ -82,7 +82,7 @@ export const CAMPUS_GEO_CENTER = { lat: latitudeOrigin, lng: longitudeOrigin };
 export const DIGITAL_MAP_ORIGIN = { svgX: originX, svgY: originY, mapPercentX: 50, mapPercentY: 50 };
 
 // -----------------------------------------------------------------------------
-// ⚙️ CORE COORDINATE CONVERSION (INDEPENDENT & SIMPLE)
+// CORE COORDINATE CONVERSION (INDEPENDENT & SIMPLE)
 // -----------------------------------------------------------------------------
 
 /**
